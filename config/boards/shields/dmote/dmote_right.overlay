@@ -1,0 +1,12 @@
+#include "dmote.dtsi"
+
+&bob {
+    col-gpios
+        = <&gpio1 11 GPIO_ACTIVE_HIGH> // col6
+        , <&gpio1 13 GPIO_ACTIVE_HIGH>
+        , <&gpio1 15 GPIO_ACTIVE_HIGH>
+        , <&gpio1 6 GPIO_ACTIVE_HIGH>
+        , <&gpio1 4 GPIO_ACTIVE_HIGH>
+        , <&gpio1 0 GPIO_ACTIVE_HIGH> // col1
+        ;
+};
