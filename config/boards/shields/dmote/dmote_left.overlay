@@ -1,12 +1,12 @@
-#include "dmote.dtsi" // Notice that the main dtsi files are included in the overlay.
+#include "dmote.dtsi"
 
 &bob {
-    col-gpios
-        = <&gpio1 0 GPIO_ACTIVE_HIGH> // col1
-        , <&gpio1 4 GPIO_ACTIVE_HIGH>
-        , <&gpio1 6 GPIO_ACTIVE_HIGH>
-        , <&gpio1 15 GPIO_ACTIVE_HIGH>
-        , <&gpio1 13 GPIO_ACTIVE_HIGH>
-        , <&gpio1 11 GPIO_ACTIVE_HIGH> // col6
-        ;
+	col-gpios =
+		<&gpio1 0 GPIO_ACTIVE_HIGH>, //col1
+		<&gpio1 4 GPIO_ACTIVE_HIGH>,
+		<&gpio1 6 GPIO_ACTIVE_HIGH>,
+		<&gpio1 15 GPIO_ACTIVE_HIGH>,
+		<&gpio1 13 GPIO_ACTIVE_HIGH>,
+		<&gpio1 11 GPIO_ACTIVE_HIGH> //col6
+	;
 };
