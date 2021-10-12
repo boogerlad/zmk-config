@@ -2,11 +2,93 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+	combos {
+		compatible = "zmk,combos";
+		combo_semicolon {
+			timeout-ms = <50>;
+			key-positions = <43 44>;
+			bindings = <&kp SEMICOLON>;
+		}//colon still unknown... and we have one free spot in the corner. maybe colon at?
+		//wait a sec. can't all modmorphs be implemented as combos? colon can be wherever lalt is + where dot is.
+		//what is  the difference between modmorph, layer, and combo?
+	}
+	behaviors {
+		mipl: minus_plus {
+			compatible = "zmk,behavior-mod-morph";
+			label = "MINUS_PLUS";
+			#binding-cells = <0>;
+			bindings = <&kp KP_MINUS>, <&kp KP_PLUS>;
+			mods = <(MOD_LSFT)>;//if lalt, EQUAL. then we have minus. shift => plus. alt => =. hmm... three keys each is nice I guess. let's leave for after interview
+		}
+		dimu: divide_multiply {
+			compatible = "zmk,behavior-mod-morph";
+			label = "DIVIDE_MULTIPLY";
+			#binding-cells = <0>;
+			bindings = <&kp KP_DIVIDE>, <&kp KP_MULTIPLY>;
+			mods = <(MOD_LSFT)>;
+		}
+		spta: space_tab {
+			compatible = "zmk,behavior-mod-morph";
+			label = "SPACE_TAB";
+			#binding-cells = <0>;
+			bindings = <&kp SPACE>, <&kp TAB>;
+			mods = <(MOD_LSFT)>;
+		}
+		queq: question_equal {
+			compatible = "zmk,behavior-mod-morph";
+			label = "QUESTION_EQUAL";
+			#binding-cells = <0>;
+			bindings = <&kp QUESTION>, <&kp EQUAL>;
+			mods = <(MOD_LSFT)>;
+		}
+		dotand: dot_ampersand {
+			compatible = "zmk,behavior-mod-morph";
+			label = "DOT_AMPERSAND";
+			#binding-cells = <0>;
+			bindings = <&kp KP_DOT>, <&kp AMPERSAND>;
+			mods = <(MOD_LSFT)>;
+		}
+		compip: comma_pipe {
+			compatible = "zmk,behavior-mod-morph";
+			label = "COMMA_PIPE";
+			#binding-cells = <0>;
+			bindings = <&kp KP_COMMA>, <&kp PIPE>;
+			mods = <(MOD_LSFT)>;
+		}
+		apex: apostraphe_exclamation {
+			compatible = "zmk,behavior-mod-morph";
+			label = "APOSTRAPHE_EXCLAMATION";
+			#binding-cells = <0>;
+			bindings = <&kp APOSTROPHE>, <&kp EXCLAMATION>;
+			mods = <(MOD_LALT)>;
+		}
+	}
 	keymap {
 		compatible = "zmk,keymap";
 
 		default_layer {
 			bindings = <
+				&kp 0	&kp 1	&kp 2	&kp 3	&kp 4	&kp 5
+				&kp 6	&kp 7	&kp 8	&kp 9	&kp A	&kp B
+				&kp C	&kp D	&kp E	&kp F	&kp G	&kp H
+				&kp I	&kp J	&kp K	&kp L	&kp M	&none
+				&none	&none	&kp N	&kp O	&none	&kp P
+				&none	&none	&none	&kp Q	&kp R	&kp S
+				&none	&none	&none	&none	&kp T	&kp U
+
+				&kp 5	&kp 4	&kp 3	&kp 2	&kp 1	&kp 0
+				&kp B	&kp A	&kp 9	&kp 8	&kp 7	&kp 6
+				&kp H	&kp G	&kp F	&kp E	&kp D	&kp C
+				&none	&kp M	&kp L	&kp K	&kp J	&kp I
+				&kp P	&none	&kp O	&kp N	&none	&none
+				&kp S	&kp R	&kp Q	&none	&none	&none
+				&kp U	&kp T	&none	&none	&none	&none
+			>;
+		};
+	};
+};
+
+/*
 				&trans	&trans	&kp F	&kp M	&kp P	&kp V
 				&trans	&kp J	&kp S	&kp N	&kp D	&kp W
 				&trans	&kp R	&kp G	&kp L	&kp C	&kp B
@@ -15,14 +97,11 @@
 				&none	&none	&none	&trans	&kp T	&trans
 				&none	&none	&none	&none	&trans	&trans
 
-				&kp 0	&kp 1	&kp 2	&kp 3	&kp 4	&kp 5
-				&kp 6	&kp 7	&kp 8	&kp 9	&kp A	&kp B
-				&kp C	&kp D	&kp E	&kp F	&kp G	&kp H
-				&none	&kp I	&kp J	&kp K	&kp L	&kp M
-				&kp N	&none	&kp O	&kp P	&none	&none
-				&kp Q	&kp R	&kp S	&none	&none	&none
-				&kp T	&kp U	&none	&none	&none	&none
-			>;
-		};
-	};
-};
+				&queq	&dotand	&compip	&apex	&kp 4	&trans
+				&dimu	&kp 7	&kp 8	&kp 9	&kp A	&trans
+				&mipl	&kp U	&kp O	&kp Y	&kp H	&trans
+				&none	&trans	&trans	&trans	&kp K	&trans
+				&trans	&none	&trans	&trans	&none	&none
+				&trans	&spta	&trans	&none	&none	&none
+				&trans	&trans	&none	&none	&none	&none
+*/
