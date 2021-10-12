@@ -1,6 +1,8 @@
+#include <dt-bindings/zmk/matrix_transform.h>
 / {
 	chosen {
 		zmk,kscan = &bob;
+		zmk,matrix_transform = &default_transform;
 	};
 
 	bob: alice {
