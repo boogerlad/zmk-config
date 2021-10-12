@@ -8,21 +8,21 @@
 
 		default_layer {
 			bindings = <
-				&kp 0	&kp 1	&kp 2	&kp 3	&kp 4	&kp 5
-				&kp 6	&kp 7	&kp 8	&kp 9	&kp A	&kp B
-				&kp C	&kp D	&kp E	&kp F	&kp G	&kp H
-				&kp I	&kp J	&kp K	&kp L	&kp M	&none
-				&none	&none	&kp N	&kp O	&none	&kp P
-				&none	&none	&none	&kp Q	&kp R	&kp S
-				&none	&none	&none	&none	&kp T	&kp U
+    &kp N0 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
+    &kp N6 &kp N7 &kp N8 &kp N9 &kp A  &kp B
+    &kp C  &kp D  &kp E  &kp F  &kp G  &kp H
+    &kp I  &kp J  &kp K  &kp L  &kp M  &kp N
+    &kp O  &kp P  &kp Q  &kp R  &kp S  &kp T
+    &kp U  &kp V  &kp W  &kp X  &kp Y  &kp Z
+    &kp N0 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5
 
-				&kp 5	&kp 4	&kp 3	&kp 2	&kp 1	&kp 0
-				&kp B	&kp A	&kp 9	&kp 8	&kp 7	&kp 6
-				&kp H	&kp G	&kp F	&kp E	&kp D	&kp C
-				&none	&kp M	&kp L	&kp K	&kp J	&kp I
-				&kp P	&none	&kp O	&kp N	&none	&none
-				&kp S	&kp R	&kp Q	&none	&none	&none
-				&kp U	&kp T	&none	&none	&none	&none
+    &none  &kp N5 &kp N6 &kp N7 &kp N8 &kp N9
+    &none  &none  &kp A  &kp B  &none  &kp C
+    &kp D  &none  &kp E  &kp F  &none  &none
+    &none  &none  &none  &kp G  &kp H  &kp I
+    &kp J  &kp K  &kp L  &none  &none  &none
+    &none  &none  &none  &none  &kp M  &kp N
+    &kp O  &kp P  &none  &none  &none  &none
 			>;
 		};
 	};
