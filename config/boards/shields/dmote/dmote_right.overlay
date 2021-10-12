@@ -1,5 +1,9 @@
 #include "dmote.dtsi"
 
+&default_transform {
+	col-offset = <6>;
+}
+
 &bob {
 	col-gpios =
 		<&gpio1 11 GPIO_ACTIVE_HIGH>, //col6
