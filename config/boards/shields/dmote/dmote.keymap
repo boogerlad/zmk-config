@@ -38,7 +38,7 @@
 			compatible = "zmk,behavior-mod-morph";
 			label = "QUESTION_EQUAL";
 			#binding-cells = <0>;
-			bindings = <&kp QUESTION>, <&kp EQUAL>;
+			bindings = <&kp QUESTION>, <&kp KP_EQUAL>;
 			mods = <(MOD_LSFT)>;
 		};
 		dotan: dot_ampersand {
@@ -73,3 +73,6 @@
 		};
 	};
 };
+
+
+----++++////****????+++++
