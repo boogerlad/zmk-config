@@ -34,11 +34,11 @@
 			bindings = <&kp SPACE>, <&kp TAB>;
 			mods = <(MOD_LSFT)>;
 		};
-		queq: question_equal {
+		eqqu: equal_question {
 			compatible = "zmk,behavior-mod-morph";
-			label = "QUESTION_EQUAL";
+			label = "EQUAL_QUESTION";
 			#binding-cells = <0>;
-			bindings = <&kp QUESTION>, <&kp KP_EQUAL>;
+			bindings = <&kp EQUAL>, <&kp QUESTION>;
 			mods = <(MOD_LSFT)>;
 		};
 		dotan: dot_ampersand {
@@ -61,7 +61,7 @@
 
 		default_layer {
 			bindings = <
-				&none  &none  &kp  F &kp  M &kp  P &kp  V            &queq  &dotan &compi &kp SQT &none  &none 
+				&none  &none  &kp  F &kp  M &kp  P &kp  V            &eqqu  &dotan &compi &kp SQT &none  &none 
 				&none  &kp  J &kp  S &kp  N &kp  D &kp  W            &dimu  &kp  A &kp  E &kp  I &none &none 
 				&none  &kp  R &kp  G &kp  L &kp  C &kp  B            &mipl  &kp  U &kp  O &kp  Y &kp  H &none 
 				&none  &kp  X &none  &none  &none                           &none  &none  &none  &kp  K &none 
