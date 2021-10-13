@@ -18,8 +18,8 @@
 			label = "MINUS_PLUS";
 			#binding-cells = <0>;
 			bindings = <&kp KP_MINUS>, <&kp KP_PLUS>;
-			mods = <(MOD_LSFT)>;//if lalt, EQUAL. then we have minus. shift => plus. alt => =. hmm... three keys each is nice I guess. let's leave for after interview
-		}
+			mods = <(MOD_LSFT)>;
+		};
 		dimu: divide_multiply {
 			compatible = "zmk,behavior-mod-morph";
 			label = "DIVIDE_MULTIPLY";
