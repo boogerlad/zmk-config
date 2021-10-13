@@ -13,17 +13,13 @@
 		//what is  the difference between modmorph, layer, and combo?
 	};
 	behaviors {
-		epmu: equal_plus_minus_underscore {
+		mipl: minus_plus {
 			compatible = "zmk,behavior-mod-morph";
-			label = "EQUAL_PLUS_MINUS_UNDERSCORE";
+			label = "MINUS_PLUS";
 			#binding-cells = <0>;
-			bindings = <&kp KP_EQUAL>, <&kp KP_MINUS>;
-			mods = <(MOD_LALT)>;
-			//default => =
-			//shift => +
-			//alt => -
-			//shift alt => _
-		};
+			bindings = <&kp KP_MINUS>, <&kp KP_PLUS>;
+			mods = <(MOD_LSFT)>;//if lalt, EQUAL. then we have minus. shift => plus. alt => =. hmm... three keys each is nice I guess. let's leave for after interview
+		}
 		dimu: divide_multiply {
 			compatible = "zmk,behavior-mod-morph";
 			label = "DIVIDE_MULTIPLY";
@@ -59,22 +55,15 @@
 			bindings = <&kp KP_COMMA>, <&kp PIPE>;
 			mods = <(MOD_LSFT)>;
 		};
-		apex: apostraphe_exclamation {
-			compatible = "zmk,behavior-mod-morph";
-			label = "APOSTRAPHE_EXCLAMATION";
-			#binding-cells = <0>;
-			bindings = <&kp APOSTROPHE>, <&kp EXCLAMATION>;
-			mods = <(MOD_LALT)>;
-		};
 	};
 	keymap {
 		compatible = "zmk,keymap";
 
 		default_layer {
 			bindings = <
-				&none  &none  &kp  F &kp  M &kp  P &kp  V            &queq  &dotan &compi &apex  &none  &none 
+				&none  &none  &kp  F &kp  M &kp  P &kp  V            &queq  &dotan &compi &kp SQT &none  &none 
 				&none  &kp  J &kp  S &kp  N &kp  D &kp  W            &dimu  &kp  A &kp  E &kp  I &none &none 
-				&none  &kp  R &kp  G &kp  L &kp  C &kp  B            &epmu  &kp  U &kp  O &kp  Y &kp  H &none 
+				&none  &kp  R &kp  G &kp  L &kp  C &kp  B            &mipl  &kp  U &kp  O &kp  Y &kp  H &none 
 				&none  &kp  X &none  &none  &none                           &none  &none  &none  &kp  K &none 
 				                     &none                                         &none 
 				                            &kp LSHFT &kp LALT             &none  &none 
