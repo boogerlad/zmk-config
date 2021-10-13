@@ -77,7 +77,7 @@
 				&none  &kp  R &kp  G &kp  L &kp  C &kp  B            &epmu  &kp  U &kp  O &kp  Y &kp  H &none 
 				&none  &kp  X &none  &none  &none                           &none  &none  &none  &kp  K &none 
 				                     &none                                         &none 
-				                            &LSHFT &LALT             &none  &none 
+				                            &kp LSHFT &kp LALT             &none  &none 
 				                        &none  &kp  T &none       &none  &spta  &none 
 				                            &none  &none             &none  &none 
 			>;
