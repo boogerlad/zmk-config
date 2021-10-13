@@ -45,14 +45,14 @@
 			compatible = "zmk,behavior-mod-morph";
 			label = "DOT_AMPERSAND";
 			#binding-cells = <0>;
-			bindings = <&kp KP_DOT>, <&kp AMPERSAND>;
+			bindings = <&kp DOT>, <&kp AMPERSAND>;
 			mods = <(MOD_LSFT)>;
 		};
 		compi: comma_pipe {
 			compatible = "zmk,behavior-mod-morph";
 			label = "COMMA_PIPE";
 			#binding-cells = <0>;
-			bindings = <&kp KP_COMMA>, <&kp PIPE>;
+			bindings = <&kp COMMA>, <&kp PIPE>;
 			mods = <(MOD_LSFT)>;
 		};
 	};
@@ -73,3 +73,6 @@
 		};
 	};
 };
+
+
++++++==&&&&&&&||||||||||||||**///
