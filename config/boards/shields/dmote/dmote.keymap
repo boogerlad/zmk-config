@@ -73,7 +73,7 @@
 		default_layer {
 			bindings = <
 				&none  &none  &kp  F &kp  M &kp  P &kp  V            &queq  &dotan &compi &apex  &none  &none 
-				&none  &kp  J &kp  S &kp  N &kp  D &kp  W            &dimu  &kp  A &kp  E &kp  I &some &none 
+				&none  &kp  J &kp  S &kp  N &kp  D &kp  W            &dimu  &kp  A &kp  E &kp  I &none &none 
 				&none  &kp  R &kp  G &kp  L &kp  C &kp  B            &epmu  &kp  U &kp  O &kp  Y &kp  H &none 
 				&none  &kp  X &none  &none  &none                           &none  &none  &none  &kp  K &none 
 				                     &none                                         &none 
