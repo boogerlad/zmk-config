@@ -8,61 +8,65 @@
 			timeout-ms = <50>;
 			key-positions = <7 8>;
 			bindings = <&kp SEMICOLON>;
-		}//colon still unknown... and we have one free spot in the corner. maybe colon at?
+		}; //colon still unknown... and we have one free spot in the corner. maybe colon at?
 		//wait a sec. can't all modmorphs be implemented as combos? colon can be wherever lalt is + where dot is.
 		//what is  the difference between modmorph, layer, and combo?
-	}
+	};
 	behaviors {
-		mipl: minus_plus {
+		epmu: equal_plus_minus_underscore {
 			compatible = "zmk,behavior-mod-morph";
-			label = "MINUS_PLUS";
+			label = "EQUAL_PLUS_MINUS_UNDERSCORE";
 			#binding-cells = <0>;
-			bindings = <&kp KP_MINUS>, <&kp KP_PLUS>;
-			mods = <(MOD_LSFT)>;//if lalt, EQUAL. then we have minus. shift => plus. alt => =. hmm... three keys each is nice I guess. let's leave for after interview
-		}
+			bindings = <&kp KP_EQUAL>, <&kp KP_MINUS>;
+			mods = <(MOD_LALT)>;
+			//default => =
+			//shift => +
+			//alt => -
+			//shift alt => _
+		};
 		dimu: divide_multiply {
 			compatible = "zmk,behavior-mod-morph";
 			label = "DIVIDE_MULTIPLY";
 			#binding-cells = <0>;
 			bindings = <&kp KP_DIVIDE>, <&kp KP_MULTIPLY>;
 			mods = <(MOD_LSFT)>;
-		}
+		};
 		spta: space_tab {
 			compatible = "zmk,behavior-mod-morph";
 			label = "SPACE_TAB";
 			#binding-cells = <0>;
 			bindings = <&kp SPACE>, <&kp TAB>;
 			mods = <(MOD_LSFT)>;
-		}
+		};
 		queq: question_equal {
 			compatible = "zmk,behavior-mod-morph";
 			label = "QUESTION_EQUAL";
 			#binding-cells = <0>;
 			bindings = <&kp QUESTION>, <&kp EQUAL>;
 			mods = <(MOD_LSFT)>;
-		}
+		};
 		dotan: dot_ampersand {
 			compatible = "zmk,behavior-mod-morph";
 			label = "DOT_AMPERSAND";
 			#binding-cells = <0>;
 			bindings = <&kp KP_DOT>, <&kp AMPERSAND>;
 			mods = <(MOD_LSFT)>;
-		}
+		};
 		compi: comma_pipe {
 			compatible = "zmk,behavior-mod-morph";
 			label = "COMMA_PIPE";
 			#binding-cells = <0>;
 			bindings = <&kp KP_COMMA>, <&kp PIPE>;
 			mods = <(MOD_LSFT)>;
-		}
+		};
 		apex: apostraphe_exclamation {
 			compatible = "zmk,behavior-mod-morph";
 			label = "APOSTRAPHE_EXCLAMATION";
 			#binding-cells = <0>;
 			bindings = <&kp APOSTROPHE>, <&kp EXCLAMATION>;
 			mods = <(MOD_LALT)>;
-		}
-	}
+		};
+	};
 	keymap {
 		compatible = "zmk,keymap";
 
@@ -70,10 +74,10 @@
 			bindings = <
 				&none  &none  &kp  F &kp  M &kp  P &kp  V            &queq  &dotan &compi &apex  &none  &none 
 				&none  &kp  J &kp  S &kp  N &kp  D &kp  W            &dimu  &kp  A &kp  E &kp  I &some &none 
-				&none  &kp  R &kp  G &kp  L &kp  C &kp  B            &mipl  &kp  U &kp  O &kp  Y &kp  H &none 
+				&none  &kp  R &kp  G &kp  L &kp  C &kp  B            &epmu  &kp  U &kp  O &kp  Y &kp  H &none 
 				&none  &kp  X &none  &none  &none                           &none  &none  &none  &kp  K &none 
 				                     &none                                         &none 
-				                            &none  &none             &none  &none 
+				                            &LSHFT &LALT             &none  &none 
 				                        &none  &kp  T &none       &none  &spta  &none 
 				                            &none  &none             &none  &none 
 			>;
