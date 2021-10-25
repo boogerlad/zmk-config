@@ -113,7 +113,7 @@
 
 		default_layer {
 			bindings = <
-				&kp C_MUTE	&kp C_VOLUME_UP	&kp F	&kp M	&kp P	&kp V			&kp semi	&dotan	&dimu	&dqq	&kp CAPSLOCK	&kp K_CONTEXT_MENU
+				&kp C_MUTE	&kp C_VOLUME_UP	&kp F	&kp M	&kp P	&kp V			&kp SEMI	&dotan	&dimu	&dqq	&kp CAPSLOCK	&kp K_CONTEXT_MENU
 				&kp C_VOLUME_DOWN	&kp J	&kp S	&kp N	&kp D	&kp W			&compipe	&kp A	&kp E	&kp I	&sqex			&kp RSHFT
 				&kp C_PLAY_PAUSE	&kp R	&kp G	&kp L	&kp C	&kp B			&minplus	&kp U	&kp O	&kp Y	&kp H			&kp RALT
 				&kp C_NEXT	&kp X	&kp LEFT	&kp UP	&kp RIGHT								&none	&none	&none	&kp K			&kp RCTRL
