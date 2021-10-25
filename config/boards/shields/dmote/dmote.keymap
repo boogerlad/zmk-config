@@ -10,12 +10,12 @@
 		combo_q {
 			timeout-ms = <50>;
 			key-positions = <30 43>;
-			bindings = <&kp Q>
+			bindings = <&kp Q>;
 		};
 		combo_z {
 			timeout-ms = <50>;
 			key-positions = <2 3>;
-			bindings = <&kp Z>
+			bindings = <&kp Z>;
 		};
 	};
 	behaviors {
