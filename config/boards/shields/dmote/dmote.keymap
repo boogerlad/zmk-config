@@ -119,8 +119,8 @@
 				&kp C_NEXT	&kp X	&kp LEFT	&kp UP	&kp RIGHT								&none	&none	&none	&kp K			&kp RCTRL
 												&kp DOWN												&none
 									&kp BSPC	&sb NUMBER NUMBER									&equn	&kp LMETA
-								&kp T		&none		&sa LSHFT LSHFT						&kp RET		&spta	&kp LCTRL
-										&kp PSCRN	&kp ESC											&kp DEL	&kp LALT
+								&kp T		&none		&sa LSHFT LSHFT						&kp RET		&spta	&kp LALT
+										&kp PSCRN	&kp ESC											&kp DEL	&kp LCTRL
 			>;
 		};
 
