@@ -25,7 +25,7 @@
 		};
 		combo_bluetooth_clear {
 			timeout-ms = <50>;
-			key-positions = <12 24>;
+			key-positions = <0 38>;
 			bindings = <&bootloader>;
 		};
 		combo_test {
