@@ -23,6 +23,11 @@
 			key-positions = <12 24 36>;
 			bindings = <&bootloader>;
 		};
+		combo_bluetooth_clear {
+			timeout-ms = <50>;
+			key-positions = <12 24>;
+			bindings = <&bootloader>;
+		};
 		combo_test {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
