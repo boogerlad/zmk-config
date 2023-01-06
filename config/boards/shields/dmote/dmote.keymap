@@ -157,11 +157,11 @@
 
 		number_layer {
 			bindings = <
-				&trans	&trans		&trans		&brlt		&brgt		&trans			&trans	&trans	&trans	&trans	&trans	&trans
+				&trans	&trans		&trans		&brlt		&brgt		&mwh SCROLL_LEFT			&mwh SCROLL_UP	&trans	&trans	&trans	&trans	&trans
 				&trans	&trans		&kp N5		&kp N0		&kp N3		&kp N7			&kp N6	&kp N2	&kp N1	&kp N4	&trans	&trans
-				&trans	&kp N9		&kp GRAVE	&kp LBKT	&kp RBKT	&trans			&trans	&mkp LCLK	&mkp MCLK	&mkp RCLK	&kp N8	&trans
-				&trans	&kp BSLH	&kp HOME	&kp PAGE_UP	&kp END								&mwh SCROLL_LEFT	&mwh SCROLL_UP	&mwh SCROLL_RIGHT	&trans	&trans
-												&kp PAGE_DOWN											&mwh SCROLL_DOWN
+				&trans	&kp N9		&kp GRAVE	&kp LBKT	&kp RBKT	&mwh SCROLL_RIGHT			&mwh SCROLL_DOWN	&mkp LCLK	&mkp MCLK	&mkp RCLK	&kp N8	&trans
+				&trans	&kp BSLH	&kp HOME	&kp PAGE_UP	&kp END								&trans	&trans	&trans	&trans	&trans
+												&kp PAGE_DOWN											&trans
 												&trans	&trans										&trans	&trans
 											&trans	&trans	&trans								&trans	&kp TAB	&trans
 												&trans	&trans										&trans	&trans
